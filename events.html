@@ -15,21 +15,23 @@
 	
 	<!--event container I-->
 	<div class="event_container1">
-		<div id="event_img_1"><img alt="Begivenhed 1" src="resourcer/event1.jpg"></div>
+		<div class="event_img"><img alt="Begivenhed 1" src="resourcer/event1.jpg"></div>
 		
 		<div class="event_container_text1">
 			
 			<div class="event_beskrivelse">
 			<h2>Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2>
-			<p id="beskrivende_tekst">Onsdag den 31. okt. 2018 på Daginstitution Mælkevejen, Grønvangen 32 kl. 19.00<br>
-			DKK 50.00<br>
-			Pris inkl. 1 øl eller vand 50 kr. tilbuddet er kun for medlemmer af Langeskov Borgerforening <button class="mere_knap" type="button" onclick="alert('LightBox med beskrivelse af arrangament')">Læs mere</button></p>
+			<p class="beskrivende_tekst">Onsdag den 31.10.2018<br> Daginstitution Mælkevejen, Grønvangen 32<br> kl. 19.00<br>
+			DKK 50.00<br><br>
+			<button id="clickme" class="mere_knap" type="button">Læs Beskrivelse</button></p>
 			
 			</div>
+		
+		<!--Praktisk information og knapper-->
 		<div class="event_knapper">
 		<button class="i_kurv_knap" type="button" onclick="alert('Lagt i kurv')">Læg i kurv</button>
 		<div class="antal_knap">
-			<div id="antal_1">
+			<div class="antal_knapper">
 				<h3>Antal Voksne</h3>
 				<select>
   				<option value="1">1</option>
@@ -44,7 +46,7 @@
 				<option value="10">10</option>
 				</select>
 		</div>
-			<div id="antal_2">
+			<div class="antal_knapper">
 				<h3>Antal Børn</h3>
 				<select>
   				<option value="1">1</option>
@@ -63,6 +65,115 @@
 		</div>
 		</div>
 	</div>
+	
+	<!--Javascript lightbox sektion-->
+
+	<div id="lightbox">
+  		<div id="lightbox_content">
+    		<div id="close">&times;</div>
+			<div class="lightbox_beskrivelse_af_foredrag">
+    		<h2>Foredrag med Carsten Egø Nielsen: Pigerne på Sprogø</h2>
+    
+			<p><strong>Onsdag den 31. okt. 2018 på Daginstitution Mælkevejen, Grønvangen 32 kl. 19.00</strong><br><br>
+
+			I Jussi Adler Olsens bog Journal 64 omtales anstalten på Sprogø, men at der virkeligt har eksisteret en anstalt for seksuelt løsagtige kvinder på øen, er der sikkert mange der ikke ved.<br><br>
+
+			Filmatiseringen af bogen kommer til efteråret og Langeskov Borgerforening vil gerne give sine medlemmer mulighed for at hører om de virkelige skæbner og historier fra øen.<br><br>
+
+			Vi skal høre historien om kvindehjemmet på Sprogø og om nogle af skæbnerne, fx om en pige, hvor lægen i ansøgningen om at komme til Sprogø bl.a. skrev: “Forældrene har forsøgt at sende hende ud at tjene, men hun kan slet ikke udføre noget Arbejde på egen hånd…..De senere År har hun haft stærke erotiske Tilbøjeligheder så Forældrene må passe på hende både Dag og Nat”.<br><br>
+
+			Men vi skal også høre om baggrunden for anstalten og om hverdagen for beboerne, samt om lukningen i 1961. Foredraget er ledsaget af mange samtidige og nutidige billeder.<br><br>
+
+			Foredragsholderen er uddannet historiker fra Odense Universitet, og har siden 2004 beskæftiget sig med lokalhistorien i Vestsjælland og med historien om De Dansk vestindiske Øer.<br><br>
+			
+			<strong>Arrangamentet er kun for medlemmer af Langeskov Borgerforening.<br>
+			Pris: 50,00 kr.<br>
+			Pris inkl. 1 øl eller vand</strong>
+		
+			</p>
+			</div>
+  </div>
+</div>
+	
+<!--Sektion II - 2. Event-->
+	<!--event container I-->
+	<div class="event_container1">
+		<div class="event_img"><img alt="Begivenhed 1" src="resourcer/den_gamle_by.JPG"></div>
+		
+		<div class="event_container_text1">
+			
+			<div class="event_beskrivelse">
+			<h2>Juletur til Aarhus</h2>
+			<p class="beskrivende_tekst"> Lørdag d. 24.11.2018,<br>"Den Gamle By", Viborgvej 2, 8000 Aarhus C<br> Kl. 9.00 – 20.00<br>DKK 49.000<br><br>
+			<button id="clickme_1" class="mere_knap" type="button">Læs Beskrivelse</button></p>
+			
+			</div>
+		
+		<!--Praktisk information og knapper-->
+		<div class="event_knapper">
+		<button id="i_kurv_2" class="i_kurv_knap" type="button" onclick="alert('Lagt i kurv')">Læg i Kurv</button>
+		<div class="antal_knap">
+			<div class="antal_knapper">
+				<h3>Antal Voksne</h3>
+				<select>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select>
+		</div>
+			<div class="antal_knapper">
+				<h3>Antal Børn</h3>
+				<select>
+  				<option value="1">1</option>
+  				<option value="2">2</option>
+  				<option value="3">3</option>
+  				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	
+	<!--Javascript lightbox sektion-->
+
+	<div id="lightbox_1">
+  		<div id="lightbox_content_1">
+    		<div id="close_1">&times;</div>
+			<div class="lightbox_beskrivelse_af_foredrag">
+    		<h2>Juletur til "Den Gamle By" i Aarhus</h2>
+    
+			<p><strong>Lørdag d. 24.11.2018, Viborgvej 2, 8000 Aarhus C, Kl. 9.00 - 20.00</strong><br><br>
+				
+			Årets juletur går til »Den Gamle By« i Aarhus.<br> Tag med og oplev julestemningen som
+			den var på mormor og morfars tid.<br><br>
+			Har man ikke lyst til at tage med i »Den Gamle By« er
+			man også meget velkommen til at tage med bussen til Århus, og bruge dagen på egen hånd i
+			byen.<br><br>
+			
+			Vi glæder os til at have en hyggelig dag i Aarhus med jer.<br><br>
+			
+			<strong>Arrangamentet er kun for medlemmer af Langeskov Borgerforening.<br>
+			Pris: 49,00 kr. – indgang til »Den Gamle By« er for egen regning.
+			</strong></p>
+			</div>
+  </div>
+</div>
+	
+<script src="lightbox.js"></script>
 	
 </body>
 </html>

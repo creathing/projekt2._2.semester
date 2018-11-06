@@ -22,7 +22,7 @@ p {
 	font-family: Verdana;
 }
 .header_image {
-	background-image: url("moodbprad_styletile/udendørs_koncert.png");
+	background-image: url("moodboard_styletile/udendørs_koncert.png");
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -37,7 +37,7 @@ p {
 	color: #F9FBFC;
 	left: 35%;
 	position: absolute;
-	top: 20%;
+	top: 17%;
 	font-size: 25pt;
 	width: 400px;
 	border: medium;
@@ -51,14 +51,15 @@ p {
 .event_container1 {
 	height: 100%;
 	width: 65%;
-	padding: 50px;
+	padding: 30px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 	margin-left: 12%;
-	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-top: 5%;
 	overflow: hidden;
 	display: inline-block;
 	border: solid;
-	border-width: 4pt;
+	border-width: 3pt;
 	border-color: #535252;
 }
 .event_container_text1 {
@@ -67,11 +68,11 @@ p {
 	display: inline;
 	padding-left: 50px;
 }
-.event_container_text1 #beskrivende_tekst {
+.event_container_text1 .beskrivende_tekst {
 	width: 500px;
 	height: 100px;
 }
-#event_img_1 {
+.event_img {
 	float: left;
 	overflow: hidden;
 	display: inline;
@@ -79,13 +80,13 @@ p {
 	width: 300px;
 	height: 200px;
 	border: solid;
-	border-width: 4pt;
+	border-width: 3pt;
 	border-color: #535252;
 	margin-top: 20px;
 }
 .i_kurv_knap {
-	width: 90px;
-	height: 50px;
+	width: 100px;
+	height: 55px;
 	font-family: Verdana;
 	color: #F9FBFC;
 	background-color: #537682;
@@ -98,11 +99,14 @@ p {
 .i_kurv_knap:hover {
 	background-color: #535252;
 }
+#i_kurv_2 {
+	margin-left: 130px;
+}
 .antal_knap {
 	height: 25px;
 	display: inline-flex;
 }
-#antal_1 {
+.antal_knapper {
 	padding-right: 50px;
 }
 .mere_knap {
@@ -110,7 +114,6 @@ p {
 	background-color: #CDDBC4;
 	font-family: Verdana;
 	font-size: 12pt;
-	margin-left: 5px;
 	color: #537286;
 }
 .mere_knap:hover {
@@ -122,4 +125,95 @@ p {
 .event_knapper {
 	background-color: #cddbc4;
 	height: 100px;
+}
+
+/*Javascript sektion*/
+
+#lightbox {
+ 	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	top: 0px;
+  	left: 0px;
+  	background: rgba(0, 0, 0, 0.3);
+  	display: none;
+}
+
+#lightbox.open {
+  	display: block;
+	z-index: 1;
+}
+
+#lightbox_content {
+  	position: absolute;
+  	width: 800px;
+  	height: 500px;
+  	background: #ffffff;
+  	border-radius: 3px;
+  	left: 50%;
+  	top: 50%;
+  	margin-left: -400px;
+  	margin-top: -250px;
+  	text-align: left;
+}
+
+#close {
+  	position: absolute;
+  	right: 20px;
+  	top: 20px;
+  	background: rgba(0, 0, 0, 0.2);
+  	height: 20px;
+  	width: 20px;
+  	border-radius: 15px;
+  	text-align: center;
+  	color: #ffffff;
+ 	cursor: pointer;
+}
+.lightbox_beskrivelse_af_foredrag {
+	width: 700px;
+	padding: 50px;
+	font-size: 10pt;
+	margin-top: -20px;
+}
+/*Javascript sektion*/
+
+#lightbox_1 {
+ 	position: fixed;
+  	width: 100%;
+  	height: 100%;
+  	top: 0px;
+  	left: 0px;
+  	background: rgba(0, 0, 0, 0.3);
+  	display: none;
+}
+
+#lightbox_1.open {
+  	display: block;
+	z-index: 1;
+}
+
+#lightbox_content_1 {
+  	position: absolute;
+  	width: 800px;
+  	height: 340px;
+  	background: #ffffff;
+  	border-radius: 3px;
+  	left: 50%;
+  	top: 50%;
+  	margin-left: -400px;
+  	margin-top: -250px;
+  	text-align: left;
+}
+
+#close_1 {
+  	position: absolute;
+  	right: 20px;
+  	top: 20px;
+  	background: rgba(0, 0, 0, 0.2);
+  	height: 20px;
+  	width: 20px;
+  	border-radius: 15px;
+  	text-align: center;
+  	color: #ffffff;
+ 	cursor: pointer;
 }
