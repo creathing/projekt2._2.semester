@@ -21,7 +21,7 @@ document.getElementById("clickme_1").addEventListener("click", function() {
   document.getElementById("lightbox_1").className = "open";
 });
 
-document.getElementById("close_1").addEventListener("click", function() {
+document.getElementById("close").addEventListener("click", function() {
   document.getElementById("lightbox_1").className = "";
 });
 
