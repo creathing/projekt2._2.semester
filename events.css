@@ -5,7 +5,7 @@ body {
 	font-family: Verdana;
 	text-decoration-color: none;
 	color: #535252;
-	background-color: #CDDBC4;
+	background-color: #FFFFFF;
 	height: 100%;
 }
 h2 {
@@ -26,24 +26,24 @@ p {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 520px;
+	height: 340px;
 	background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	margin-top: -200px;
+	margin-top: 0px;
 }
 #begivenheder {
 	font-family: Verdana;
 	color: #F9FBFC;
 	left: 35%;
 	position: absolute;
-	top: 17%;
+	top: 25%;
 	font-size: 25pt;
 	width: 400px;
 	border: medium;
 	border-color: white;
 	border-style: solid;
-	border-width: 3pt;
+	border-width: 3px;
 	text-align: center;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -54,12 +54,12 @@ p {
 	padding: 30px;
 	padding-top: 15px;
 	padding-bottom: 5px;
-	margin-left: 12%;
+	margin-left: 15.5%;
 	margin-top: 5%;
 	overflow: hidden;
 	display: inline-block;
 	border: solid;
-	border-width: 3pt;
+	border-width: 2px;
 	border-color: #535252;
 }
 .event_container_text1 {
@@ -80,7 +80,7 @@ p {
 	width: 300px;
 	height: 200px;
 	border: solid;
-	border-width: 3pt;
+	border-width: 1px;
 	border-color: #535252;
 	margin-top: 20px;
 }
@@ -111,19 +111,19 @@ p {
 }
 .mere_knap {
 	border: none;
-	background-color: #CDDBC4;
+	background-color: #FFFFFF;
 	font-family: Verdana;
 	font-size: 12pt;
 	color: #537286;
 }
 .mere_knap:hover {
-	color: #FFFFFF;
+	color: #535252;
 }
 .event_beskrivelse {
 	display: table;
 }
 .event_knapper {
-	background-color: #cddbc4;
+	background-color: #FFFFFF;
 	height: 100px;
 }
 
@@ -216,4 +216,136 @@ p {
   	text-align: center;
   	color: #ffffff;
  	cursor: pointer;
+}
+
+/*Footer*/
+
+.footer-distributed{
+  background-color: #cddbc4;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: Verdana;
+  font: bold 12px;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+#mail:hover {
+	color: #FFFFFF;
+}
+.kontakt {
+	margin-top: -20px;
+	padding-top: 0px;
+}
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 40%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #525353;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #535252;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display: block;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: bold;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #535252;
+  text-decoration: none;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+  padding-right: 20px;
+  float:right;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #535252;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  float:right;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #535252;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#facebook_link {
+	margin-top: 10px;
+	position: absolute;
+	background-image: url("resourcer/facebook_icon.png");
+}
+
+/*Header*/
+.navbar {
+    overflow: hidden;
+    background-color: #cddbc4;
+    font-family: Verdana;
+	position: fixed;
+	width:100%;
+	z-index: 2;
+}
+
+/* langeskov logo overlapper */
+#logo_container {
+  height: 115px;
+  width: 160px;
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  margin: 0 0 30px;
+  padding: 20px 30px;
+  padding-left: 60px
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color:#535252;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
 }
