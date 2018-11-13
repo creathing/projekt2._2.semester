@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Langeskov Gaester</title>
+<link rel="stylesheet" type="text/css" href="gaester.css">
+<link href="langeskov_base_css.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+	
+<!--Menu bar-->
+	<a href="lbforside.html" class="logo_container_link_tag"><img class="navbar_logo_container" src="resourcer/langeskov_logo.png" alt="Logo"/></a>
+<div class="navbar">
+  <a><img src="resourcer/shopping_basket.png." id="shopping_basket" alt="Indkøbskurv" ></a>
+  <a href="#kontakt">Kontakt</a>
+  <a href="#min side">Min Side</a>
+  <a href="#Gæster">Gæster</a>
+  <a href="gaester.html">Kræmmer</a>
+
+ 
+  <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Medlemmer</button>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+       </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Events</h3>
+          <a href="events.html">Køb Billetter</a>
+         </div>
+        <div class="column">
+          <h3>Kræmmermarked</h3>
+          <a href="#">Bliv Frivillig</a>
+          <a href="#">Markedsprogram</a>
+          <a href="#">Markedsavis</a>
+          <a href="#">Om Markedet</a>
+        </div>
+        <div class="column">
+          <h3>Medlemsinfo</h3>
+          <a href="#">Medlemsfordele</a>
+          <a href="#">Bestyrelsen</a>
+          <a href="#">Vedtægter</a>
+        </div>
+		<div class="column">
+		  <h3>Om Os</h3>
+      <a href="#">Generel Information</a>
+      <a href="#">Langeskovs Historie</a>
+      <a href="#">Borgerforeningens Historie</a>
+    </div>
+       <div class="column">
+          <h3>Galleri</h3>
+         <a href="#">Galleri 1</a>
+         <a href="#">Galleri 2</a>
+         <a href="#">Se Mere</a>
+        </div>
+   
+
+
+
+		  </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<!--Forside billede-->
+
+<div class="hero-image">
+  <div class="hero-text">
+	  <div>Gæster</div>
+
+    </div>
+</div>
+
+
+<!-- gæsters velkomst tekst-->
+
+<div class="container">
+                    <div class="row">
+                        <div class="heading-title text-center">
+                            <h1>Bliv en del af dit Lokalsamfund</h1>
+                            <p class="p-top-30 half-txt">
+							Her er der fokus på nærmiljø og lokalsamfundet, som bliver drevet af frivillig ildsjæle.
+							Vi sørger for oplevelser og fællesskab for borgerne i Langeskov.
+							</p>
+</div>
+</div>
+</div>
+<!--bliv medlem og frivillig kasser-->
+
+<div class="cards">
+<div class="card">
+  <img src="resourcer/medlem_gæster.png" alt="Langeskov Medlemskab">
+  <div class="card_text">
+  	<h3>Medlemsskab</h3>
+  	<p>Bliv medlem af Langeskovborgerforening for kun 125 kroner om året for hele husstanden.</p>
+  	<ul>
+  	<li>Gode Oplevelser</li>
+  	<li>Få Nye Bekendtskaber</li>
+  	<li>Støt Dit Lokalsamfund</li>
+  	</ul>  
+  	<button>Tilmeld</button>
+  </div>
+</div>
+
+
+<div class="card">
+  <img src="resourcer/frivilig.png" alt="Bliv Frivillig">
+  <div class="card_text">
+  <h3>Bliv frivillig</h3>
+  <p>Vær med til at støtte dit lokalsamfund, og skabe gode oplevelser for din familie og nærmiljø.
+</p>
+	<button id="tilmeld_knap">Tilmeld</button>
+</div>
+	</div>
+	</div>
+
+
+<!--footer-->
+
+<footer class="footer-distributed">
+
+      <div class="footer-left">       
+
+        <p class="footer-company-name"></p>
+      </div>
+
+      <div class="footer-center">
+
+        <div class="kontakt">
+          <i class="fa fa-map-marker"></i>
+          <h2>Kontakt</h2>
+		  <p>Engvej 16, 5550 Langeskov<br><br>Tlf. 28 15 45 23<br><br><a href="mailto:bestyrelse@langeskovborgerforening.dk" id="mail">bestyrelse@langeskovborgerforening.dk</a></p>
+        </div>
+      </div>
+
+        
+	  <a href="lbforside.html"><img src="resourcer/langeskov_logo.png" alt="Logo" class="footer_logo"></a>
+
+
+
+      <div class="footer-right">
+
+
+        <div class="footer-icons">
+
+        <div id="facebook_link"><a href="https://www.facebook.com/groups/133818193356302/" target="_blank"><img src="resourcer/facebook_icon.png" alt="Facebook Icon" style="width: 30px; height: 30px;"></a></div>
+      
+        </div>
+
+      </div>
+
+    </footer>
+
+</body>
+</html>
