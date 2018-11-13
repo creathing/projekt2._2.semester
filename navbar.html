@@ -1,0 +1,76 @@
+ <!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="Gæster.css">
+<title></title>
+</head>
+<body>
+
+<!--Menu bar-->
+<div class="navbar">
+  <a href="#kontakt">Kontakt</a>
+  <a href="#gæster">Gæster</a>
+  <a href="#kræmmer">Kræmmer</a>
+  <img id="logo_container" src="langeskov_logo.png" alt="Logo"/>
+
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Medlemmer</button>
+<i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+       </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Om os</h3>
+          <a href="#">Medlemsfordele</a>
+          <a href="#">link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Events</h3>
+          <a href="#">Kommende kunstner</a>
+          <a href="#">Events</a>
+        </div>
+        <div class="column">
+          <h3>Gallary</h3>
+          <a href="#">Sommerfest 2017</a>
+          <a href="#">Sommerfest 2016</a>
+          <a href="#">Sommerfest 2015</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+ 
+ 
