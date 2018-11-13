@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lbindex</title>
+<link href="lbforside.css" type="text/css" rel="stylesheet"/>
+<script src="lbforside.js" defer></script>
+</head>
+
+<body>
+
+<!--Menu bar-->
+<div class="navbar">
+  <a href="#kontakt">Kontakt</a>
+	<a href="#Min Side">Min Side</a>
+  <a href="#Gæster">Gæster</a>
+  <a href="#Gæster">Kræmmer</a>
+  <img id="logo_container" src="langeskov_logo.png" alt="Logo"/>
+
+
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Medlemmer
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+       </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Om os</h3>
+          <a href="#">Medlemsfordele</a>
+          <a href="#">link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Events</h3>
+          <a href="#">Kommende kunstner</a>
+          <a href="events.html">Events</a>
+        </div>
+        <div class="column">
+          <h3>Gallary</h3>
+          <a href="#">Sommerfest 2017</a>
+          <a href="#">Sommerfest 2016</a>
+          <a href="#">Sommerfest 2015</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+	
+<section class="hero-image">
+  <div class="hero-text">
+	  <div id=headertekst>Velkommen</div>
+  </div>
+</section>
+	
+<section class="welcome-text">
+	<h1>Velkommen til Langeskov Borgerforening</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. </p>
+</section>
+	
+<section class="doors">
+	<div class="member-door">
+ 	 <img src="skovhytte.png" alt="John" style="width:100%">
+ 	 <h1>Medlemmer</h1>
+  	 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+ 	<p><button>Læs mere</button></p>
+	</div>
+	
+	<div class="guest-door">
+ 	 <img src="gæster.png" alt="medlemmer" style="width:100%">
+ 	 <h1>Gæster</h1>
+  	 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+ 	<p><button href="gaester.html">Læs mere</button></p>
+	</div>
+	
+	<div class="krummer-door">
+ 	 <img src="kræmmer.png" alt="kræmmer" style="width:100%">
+ 	 <h1>Kræmmere</h1>
+  	 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+ 	<p><button>Læs mere</button></p>
+	</div>
+</section>
+	
+	<section class=sp-headline><h1>Samarbejdspartnere</h1></section>
+	
+	<section class="sp">
+	<div class="sp-slide">
+		<div id="arrow-left" class="arrow"></div>
+ 	 <img src="partners1.png" alt="spimg" style="width:80%">
+		<div id="arrow-right" class="arrow"></div>
+	</div>
+	</section>
+	
+	
+	<footer class="footer-distributed">
+
+      <div class="footer-left">       
+
+        <p class="footer-company-name"></p>
+      </div>
+
+      <div class="footer-center">
+
+        <div class="kontakt">
+          <i class="fa fa-map-marker"></i>
+          <h2>Kontakt</h2>
+		  <p>Engvej 16, 5550 Langeskov<br><br>Tlf. 28 15 45 23<br><br><a href="mailto:bestyrelse@langeskovborgerforening.dk" id="mail">bestyrelse@langeskovborgerforening.dk</a></p>
+        </div>
+      </div>
+
+        
+      <img src="resourcer/langeskov_logo.png" alt="Logo" height="150" width="200" id="fb_logo">
+
+
+
+      <div class="footer-right">
+
+       
+        <div class="footer-icons">
+
+        <div id="facebook_link"><a href="https://www.facebook.com/groups/133818193356302/"><img src="resourcer/facebook_icon.png" alt="Facebook Icon" style="width: 30px; height: 30px;"></a></div>
+      
+
+      </div>
+
+    </footer>
+	
+	
+<div id="peekaboo">Har du styr på medlemsfordelene? Tjek dem under "Gæster!"</div>
+		
+	<script>
+			//variabler//
+		let sliderImages = document.querySelectorAll('.slide'), 
+			arrowLeft = document.querySelector('arrow-left'),
+			arrowRight = document.querySelector('arrow-right'),
+			current = 0; 
+			
+			//funktion - clear all images//
+			function reset(){
+				for(let i = 0; i < sliderImages.length; i++){
+					sliderImages[i].style.display = 'none';
+				}
+			}
+			
+			function startSlide(){
+				reset();
+				sliderImages[0].style.display = 'block'; 
+			}
+			
+			//show prev//
+			function slideLeft(){
+				reset(); //want to wipe the slate clean//
+				sliderImages[current - 1].style.display = 'block';
+				current--;
+			}
+			
+			//show next//
+			function slideRight(){
+				reset(); //want to wipe the slate clean//
+				sliderImages[current + 1].style.display = 'block';
+				current++;
+			
+			//for at teste det, skal der bruges et event//	//left arrow click//
+			arrowLeft.addEventListener('click', function(){
+				if(current === 0){ 
+				  current = sliderImages.length; /
+				   }
+				slideLeft();
+			});
+				
+			//right arrow click//
+			arrowRight.addEventListener('click', function(){
+				if(current === sliderImages.length - 1){ 
+				  current = -1; 
+				   }
+				slideRight();
+			});
+			
+			startSlide();
+		</script>	
+		
+		
+	<script>
+		function yScrollHandler(){
+			var win = document.getElementById('peekaboo');
+			if((window.pageYOffset + window.innerHeight) >= document.body.offsetHeight){
+				win.style.transition = "right 0,7s ease-in-out 0s";
+				win.style.right = "0px";
+			} else {
+				win.style.transition = "right 0,7s ease-in-out 0s";
+				win.style.right = "-452px";
+			}
+		}
+		window.onscroll =yScrollHandler;
+	</script>
+</body>
+</html>

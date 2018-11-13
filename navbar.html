@@ -11,14 +11,15 @@
 <!--Menu bar-->
 <div class="navbar">
   <a href="#kontakt">Kontakt</a>
-  <a href="#gæster">Gæster</a>
-  <a href="#kræmmer">Kræmmer</a>
+  <a href="#Gæster">Gæster</a>
+  <a href="#Gæster">Kræmmer</a>
   <img id="logo_container" src="langeskov_logo.png" alt="Logo"/>
 
 
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Medlemmer</button>
-<i class="fa fa-caret-down"></i>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">Medlemmer
+      <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <div class="header">
@@ -46,31 +47,3 @@
   </div> 
 </div>
 
-
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-
- 
- 
